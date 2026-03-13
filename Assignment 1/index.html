@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            border-radius: 3%;
+            margin: 16px;
+            border: 50px solid blue;
+            min-height: 170vh;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0">
+        <tr>
+            <td rowspan="3">
+                <div class="image-box">
+                    <img style="width: 250px; height: 300px; border-radius: 10%;" id="preview" src="/Data/My Pic.jpg" alt "https://www.dropbox.com/scl/fi/zhs1y1b841hs54kxkoz0l/My-Pic.jpg?rlkey=xrv7z3l6pcgjygv7hhphzuo9q&st=i956shvu&dl=0" >
+
+                    <label class="upload-btn">
+                        Upload Image
+                        <input type="file" accept="image/*" onchange="previewImage(event)">
+                    </label>
+                </div>
+            </td>
+        
+            <td>
+                <h1>Hasnain Malik <br></h1> 
+                <h2 style="color: mediumblue;" >Web Developer</h2>
+                <h3>Rating <b> 10/10</b></h3>
+            </td>
+
+            
+        </tr>
+        <tr>
+            <td> <u> <h3>About</h3></td>
+            <td><h3 style="color: mediumblue;">Timeline</h3></td>
+        </tr>
+    </table>
+    <hr>
+
+
+    <table style="width: 100%; margin-left: 10%;" >
+        <tr>
+            <td>
+                <h1>Work Links</h>
+            </td>
+            <td><h3>User Id</h3></td>
+            <td style="color: mediumblue;">Hasnain-Developer1</td>
+        </tr>
+        <tr>
+            <td><a target="_blank" href="https://www.fiverr.com/hasnainmushtaq7">fiverr</a></td>
+            <td><h3>Name</h3></td>
+            <td style="color: mediumblue;">Hasnain Malik</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h3>Email</h3></td>
+            <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hasnainmalik9925@gmail.com" target="_blank">
+    hasnainmalik9925@gmail.com
+</a></td>
+        </tr>
+        
+        <tr>
+            <td><a style="
+                position: absolute;
+                margin-top: -70px;
+                " target="_blank" href="https://wa.me/923030637766?text=Hello%20Your%20website%20is20%Great.">Whatsapp</a></td>
+        </tr>
+        <tr>
+            <td><a style="
+                position: absolute;
+                margin-top: -60px;
+                " target="_blank" href="https://github.com/Hasnain-Developer1">GitHub</a></td>
+            <td><h3>Phone</h3></td>
+            <td><a href="tel:+923030637766">+923030637766</a></td>
+        </tr>
+        <tr>
+            <td><h1>Skills</h1></td>
+            <td><h3>Profession
+
+            </h3></td>
+            <td style="color: mediumblue;">Web Developer and Freelancer</td>
+            
+        </tr>
+        <tr>
+        <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td>WordPress</td>
+        </tr>
+        <tr>
+            <td>PCB Designer</td>
+        </tr>
+        <tr>
+            <td>JAVA Developer</td>
+        </tr>
+        <tr>
+            <td>Freelancer</td>
+        </tr>
+
+
+    </table>
+    <a style="text-align: right; margin-left: 90%; " target="_blank" href="page.html">Next page</a>
+    
+
+</body>
+
+</html>
+
+
+<style>
+    .image-box {
+        position: relative;
+        width: 300px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border: 1px solid #ccc;
+    }
+
+    .upload-btn {
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .upload-btn input {
+        display: none;
+    }
+</style>
+
+
+<script>
+    function previewImage(event) {
+        document.getElementById('preview').src =
+            URL.createObjectURL(event.target.files[0]);
+    }
+</script>
