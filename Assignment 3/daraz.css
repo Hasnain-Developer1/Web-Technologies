@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(240, 236, 236);
+    font-size: 50px;
+}
+.outer-card-upper{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    color: red;
+}
+button{
+    color: red;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid red;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.line{
+    background-color: black;
+    height: 2px;
+    margin-bottom: 2px;
+}
+.divofproducts{
+    height: 390px;
+    background-color: white;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+.productscard{
+    border:  1px solid white;
+    padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     transition: transform 0.2s;
+}
+
+.productscard> p{
+    font-size: 20px;
+    margin: 0;
+}
+.productscard:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.divofproducts>.productscard>.price{
+    color: red;
+    font-size: 35px;
+}
+.divofproducts>.productscard > img{
+    width: 100%;
+    height: 200px;
+} 
+.divofproducts>.productscard>.oldprice{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.navbar{
+    background-color: #f85606;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    z-index: 1000;
+
+}
+.navbar>ul{
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    gap: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 0px 30px;
+
+}
+.navbar>ul>li:hover{
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}

@@ -4,86 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="daraz.css"> -->
-     <style>
-        body{
-    background-color: rgb(240, 236, 236);
-    font-size: 50px;
-}
-.outer-card-upper{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content:  space-between;
-    color: red;
-}
-button{
-    color: red;
-    padding: 20px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border: 1px solid red;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-button:hover{
-    background-color: red;
-    color: white;
-    border-radius: 10px;
-    transform: scale(1.1);
-}
-.line{
-    background-color: black;
-    height: 2px;
-    margin-bottom: 2px;
-}
-.divofproducts{
-    height: 390px;
-    background-color: white;
-    margin: 0px 30px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.productscard{
-    border:  1px solid white;
-    padding: 2px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     transition: transform 0.2s;
-}
-
-.productscard> p{
-    font-size: 20px;
-    margin: 0;
-}
-.productscard:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.divofproducts>.productscard>.price{
-    color: red;
-    font-size: 35px;
-}
-.divofproducts>.productscard > img{
-    width: 100%;
-    height: 200px;
-} 
-.divofproducts>.productscard>.oldprice{
-    text-decoration: line-through;
-    opacity: 0.5;
-}
-    
-     </style>
+    <title>Daraz</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="daraz.css">
 </head>
 
 <body>
+    <div class="navbar">
+        <img height="40px" width="127px" src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png" alt="">
+        <ul>
+            <li>Save More on App</li>
+            <li>Sell on Daraz</li>
+            <li>Help & Support</li>
+            <li>Log In</li>
+            <li>Sign Up</li>
+        </ul>
+    </div>
     <div>Flash Sale</div>
     <div class="outer-card-upper">
         <span>On Sale Now</span>
@@ -96,15 +32,15 @@ button:hover{
             <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/47b9c259075006f34a216646f34dce7d.jpg_400x400q80.jpg_.avif" alt="">
                 <p>220V 4W Mosquito Killer LED <br> Lamp Insect Killer Bug Zapper....</p>
                 <p class="price">PKR 2,599</p>
-                <p style="display: inline;" class="oldprice">RS:5000</p>
+                <p style="display: inline;" class="oldprice">RS:5,000</p>
                 <p style="display: inline;">-48%</p>
         </span>
 
         <span class="productscard">
             <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/c53df8937d68e4463cf1533e07768765.jpg_400x400q80.jpg_.avif" alt="">
                 <p>Multifunctional Zoomable <br> Flashlight Torches LED Super ...</p>
-                <p class="price">RS:1046</p>      
-                <p style="display: inline;" class="oldprice">RS:1500</p>
+                <p class="price">RS:1,046</p>      
+                <p style="display: inline;" class="oldprice">RS:1,500</p>
                 <p style="display: inline;">-30%</p>
         </span>
         <span class="productscard">
@@ -120,6 +56,70 @@ button:hover{
                 <p class="price">PKR 177</p>  
                 <p style="display: inline;" class="oldprice">RS:499</p>
                 <p style="display: inline;">-64%</p>
+        </span>
+        
+    </div>
+    <div class="divofproducts">
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/e2c8b3aace84e0689714b8daee92f0c1.jpg_400x400q80.jpg_.avif" alt="">
+                <p>3 Tier Over The Sink Dish Drying<br> Rack  with Fruit Basket Kitchen...</p>
+                <p class="price">PKR 9,499</p>
+                <p style="display: inline;" class="oldprice">RS:1,399</p>
+                <p style="display: inline;">-32%</p>
+        </span>
+
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/21b99876a5b07c451ef59409149cf67e.jpg_400x400q80.jpg_.avif" alt="">
+                <p>Outdoor Rocking Chair Sleeping <br> chair relaxe chair Rocking...</p>
+                <p class="price">RS:10,515</p>      
+                <p style="display: inline;" class="oldprice">RS:19,999</p>
+                <p style="display: inline;">-47%</p>
+        </span>
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/b47f748820b07b82f34ba88c3d0ed672.jpg_400x400q80.jpg_.avif" alt="">
+                <p>Travel Portable comfortable <br>Inflatable  Air Pillow Cushion ....</p>
+                <p class="price">PKR 257</p>     
+                <p style="display: inline;" class="oldprice">RS:699</p>
+                <p style="display: inline;">-63%</p>
+        </span>
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/5cab275c886fedd4a204d36b0eaeaeb9.jpg_400x400q80.jpg_.avif" alt="">
+                <p>Kitchen Cleaner - Degreaser - <br>Grease  Cutter - AUTOGUYS ....</p>
+                <p class="price">PKR 263</p>  
+                <p style="display: inline;" class="oldprice">RS:700</p>
+                <p style="display: inline;">-67%</p>
+        </span>
+        
+    </div>
+    <div class="divofproducts">
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/d3741fcc78f484248911879fe3d8c49a.jpg_400x400q80.jpg_.avif" alt="">
+                <p>Pack of 2 Tapal Danedar 900gm....</p>
+                <p class="price">PKR 3,495</p>
+                <p style="display: inline;" class="oldprice">RS:3,555</p>
+                <p style="display: inline;">-2%</p>
+        </span>
+
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/94608a6dcb5d2375a0f714e98fdfacf8.jpg_200x200q80.jpg_.avif" alt="">
+                <p>Hot selling Wallet for Men Leather <br> RFID Blocking Bifold Stylish ...</p>
+                <p class="price">RS:611</p>      
+                <p style="display: inline;" class="oldprice">RS:1,500</p>
+                <p style="display: inline;">-59%</p>
+        </span>
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/g/kf/Sb04cea1733b44c8281d9145e1801867dQ.jpg_200x200q80.jpg_.avif" alt="">
+                <p>Walkend || Sneakers for men || shoes <br>for men  New stylish sneakers....</p>
+                <p class="price">PKR 1,234</p>     
+                <p style="display: inline;" class="oldprice">RS:1,599</p>
+                <p style="display: inline;">-23%</p>
+        </span>
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/7b2dfcd90c971b9dc5f602b3adbb2509.jpg_200x200q80.jpg_.avif" alt="">
+                <p>Orignal TWS i7s i12 ,pro  Airpods  <br>with Super Sound & High ....</p>
+                <p class="price">PKR 681</p>  
+                <p style="display: inline;" class="oldprice">RS:2,000</p>
+                <p style="display: inline;">-66%</p>
         </span>
         
     </div>
