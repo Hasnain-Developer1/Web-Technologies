@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="daraz.css"> -->
+     <style>
+        body{
+    background-color: rgb(240, 236, 236);
+    font-size: 50px;
+}
+.outer-card-upper{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    color: red;
+}
+button{
+    color: red;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid red;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.line{
+    background-color: black;
+    height: 2px;
+    margin-bottom: 2px;
+}
+.divofproducts{
+    height: 390px;
+    background-color: white;
+    margin: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.productscard{
+    border:  1px solid white;
+    padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     transition: transform 0.2s;
+}
+
+.productscard> p{
+    font-size: 20px;
+    margin: 0;
+}
+.productscard:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.divofproducts>.productscard>.price{
+    color: red;
+    font-size: 35px;
+}
+.divofproducts>.productscard > img{
+    width: 100%;
+    height: 200px;
+} 
+.divofproducts>.productscard>.oldprice{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+    
+     </style>
+</head>
+
+<body>
+    <div>Flash Sale</div>
+    <div class="outer-card-upper">
+        <span>On Sale Now</span>
+        <button>Shop all Products</button>
+    </div>
+    <div class="line"></div>    
+    </div>
+    <div class="divofproducts">
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/47b9c259075006f34a216646f34dce7d.jpg_400x400q80.jpg_.avif" alt="">
+                <p>220V 4W Mosquito Killer LED <br> Lamp Insect Killer Bug Zapper....</p>
+                <p class="price">PKR 2,599</p>
+                <p style="display: inline;" class="oldprice">RS:5000</p>
+                <p style="display: inline;">-48%</p>
+        </span>
+
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/c53df8937d68e4463cf1533e07768765.jpg_400x400q80.jpg_.avif" alt="">
+                <p>Multifunctional Zoomable <br> Flashlight Torches LED Super ...</p>
+                <p class="price">RS:1046</p>      
+                <p style="display: inline;" class="oldprice">RS:1500</p>
+                <p style="display: inline;">-30%</p>
+        </span>
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/2c328ad4958b5a7060cb7809fac9c5ba.jpg_400x400q80.jpg_.avif" alt="">
+                <p>50pcs Air Fryer Disposable  Paper <br> Liner Non-Stick Mat steamer....</p>
+                <p class="price">PKR 246</p>     
+                <p style="display: inline;" class="oldprice">RS:599</p>
+                <p style="display: inline;">-59%</p>
+        </span>
+        <span class="productscard">
+            <img width="20%" src="https://img.drz.lazcdn.com/static/pk/p/6003abab5de6756a50a490852edf7a2c.png_400x400q80.png_.avif" alt="">
+                <p>Silicone Shampoo Brush Clean  The <br> Scalp  Thoroughly Scalp ....</p>
+                <p class="price">PKR 177</p>  
+                <p style="display: inline;" class="oldprice">RS:499</p>
+                <p style="display: inline;">-64%</p>
+        </span>
+        
+    </div>
+</body>
+
+</html>
