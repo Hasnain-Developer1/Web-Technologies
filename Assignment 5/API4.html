@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joke API</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box{
+      background: white;
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    button{
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Random Joke 😂</h2>
+
+    <p id="joke">Loading...</p>
+
+    <button onclick="getJoke()">
+      New Joke
+    </button>
+  </div>
+
+  <script>
+    async function getJoke() {
+
+      let response = await fetch("https://v2.jokeapi.dev/joke/Any")
+      let data = await response.json()
+
+      if(data.type === "single"){
+        document.getElementById("joke").innerText = data.joke
+      }
+
+      else{
+        document.getElementById("joke").innerText =
+          data.setup + " 😂 " + data.delivery
+      }
+    }
+
+    getJoke()
+  </script>
+
+</body>
+</html>
