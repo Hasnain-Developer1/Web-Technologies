@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advice API</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box{
+      background: white;
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      margin-bottom: 15px;
+    }
+
+    button{
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Random Advice 💡</h2>
+
+    <p id="advice">Loading...</p>
+
+    <button onclick="getAdvice()">
+      New Advice
+    </button>
+  </div>
+
+  <script>
+    async function getAdvice() {
+
+      let response = await fetch("https://api.adviceslip.com/advice")
+      let data = await response.json()
+
+      document.getElementById("advice").innerText =
+        data.slip.advice
+    }
+
+    getAdvice()
+  </script>
+
+</body>
+</html>
